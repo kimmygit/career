@@ -733,7 +733,11 @@
             from { opacity: 0; transform: translateY(4px); }
             to { opacity: 1; transform: translateY(0); }
         }
-    </style>
+    
+  image-slot, img#profile { border: none !important; outline: none !important; box-shadow: none !important; }
+  image-slot::before, image-slot::after { display: none !important; border: none !important; }
+
+</style>
 </head>
 <body>
 
