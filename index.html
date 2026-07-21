@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키미 | 김희재 - 포트폴리오 & 이력</title>
+    <meta name="description" content="마케팅 디자이너, AI 크리에이터, AI 강사 키미(김희재)의 포트폴리오 및 강의/경력 이력 페이지입니다.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="키미 | 김희재 - 포트폴리오 & 이력">
+    <meta property="og:description" content="마케팅 디자이너, AI 크리에이터, AI 강사 키미(김희재)의 포트폴리오 및 강의/경력 이력 페이지입니다.">
+    
+    <link rel="icon" type="image/png" href="resources/favicon.png">
+    
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --container-bg: #ffffff;
+            --text-primary: #37352f;
+            --text-secondary: #7f7f7f;
+            --border-color: #e9e9e6;
+            --hover-bg: #f5f5f4;
+            --callout-bg: #f1f1ef;
+            --accent-color: #2383e2;
+            --accent-color-hover: #1b66b1;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --cover-gradient: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            --tag-gray: #f1f1ef;
+            --tag-blue: #e8f4fc;
+            --tag-green: #edf6ec;
+            --tag-yellow: #fdf6e2;
+            --tag-orange: #fbece3;
+            --tag-pink: #fbf0f0;
+            --badge-bg: #e3e2e0;
+            --badge-text: #37352f;
+            
+            --font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #191919;
+            --container-bg: #191919;
+            --text-primary: #e3e3e3;
+            --text-secondary: #9b9b9b;
+            --border-color: #2f2f2f;
+            --hover-bg: #2c2c2c;
+            --callout-bg: #252525;
+            --accent-color: #2383e2;
+            --accent-color-hover: #3b90e6;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --cover-gradient: linear-gradient(135deg, #2b1055 0%, #0f2027 100%);
+            --tag-gray: #2c2c2c;
+            --tag-blue: #1e3a5f;
+            --tag-green: #1b3d22;
+            --tag-yellow: #4d3d1e;
+            --tag-orange: #4c2f1f;
+            --tag-pink: #4d2323;
+            --badge-bg: #2d2d2d;
+            --badge-text: #e3e3e3;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle-btn {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            background: var(--callout-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 10;
+            font-weight: 500;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .theme-toggle-btn:hover {
+            background: var(--hover-bg);
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px 100px 40px;
+            position: relative;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 20px 60px 20px;
+            }
+        }
+
+        /* Profile Section (New Layout) */
+        .profile-header-main {
+            margin-top: 60px;
+        }
+
+        .profile-name-new {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .profile-subtitle-new {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            margin-top: 14px;
+            padding-left: 12px;
+            border-left: 3px solid var(--text-primary);
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        .profile-divider {
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            margin: 20px 0 28px 0;
+        }
+
+        .profile-row-new {
+            display: grid;
+            grid-template-columns: 100px 1.5fr 1fr 1fr;
+            gap: 28px;
+            align-items: start;
+            margin-bottom: 40px;
+        }
+
+        .profile-col-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .profile-col-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-col-bio {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .greetings-text {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        .bio-desc-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        .profile-col-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-item-new {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-label-new {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 2px;
+            width: fit-content;
+        }
+
+        .contact-val-new {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-val-new a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-val-new a:hover {
+            color: var(--accent-color);
+        }
+
+        .profile-col-social {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-link-item {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .social-link-item i {
+            margin-top: 3px;
+            font-size: 1rem;
+        }
+
+        .social-link-item a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .social-link-item a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .social-handle {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: normal;
+            display: block;
+            margin-top: 1px;
+        }
+
+        .social-title-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: normal;
+            display: block;
+            margin-top: 2px;
+            line-height: 1.35;
+        }
+
+        @media (max-width: 768px) {
+            .profile-row-new {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .profile-col-avatar {
+                margin: 0 auto;
+            }
+            .profile-col-bio {
+                text-align: center;
+            }
+            .theme-toggle-btn {
+                right: 20px;
+                top: 15px;
+            }
+        }
+
+        /* Headings */
+        h2.section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 40px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Job History Timeline (Notion Style) */
+        .career-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .career-item {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            position: relative;
+        }
+
+        .career-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .company-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .career-period {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .job-title {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .status-badge.active {
+            background-color: var(--tag-green);
+            color: #2b542c;
+        }
+
+        /* Lectures Section with Tabs */
+        .lecture-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tabs {
+            display: flex;
+            background: var(--callout-bg);
+            padding: 4px;
+            border-radius: 8px;
+            gap: 2px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            background: var(--bg-color);
+            color: var(--text-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .search-container {
+            position: relative;
+            min-width: 200px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 12px 8px 32px;
+            border: 1px solid var(--border-color);
+            background-color: var(--container-bg);
+            color: var(--text-primary);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-color);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .lecture-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+        }
+
+        .load-more-container {
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .load-more-text {
+            color: var(--accent-color);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 12px;
+            transition: color 0.2s ease;
+        }
+
+        .load-more-text:hover {
+            color: var(--accent-color-hover);
+            text-decoration: underline;
+        }
+
+        .year-group {
+            position: relative;
+        }
+
+        .year-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .year-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        /* Lectures List Table */
+        .lecture-table-container {
+            width: 100%;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--container-bg);
+            margin-top: 10px;
+        }
+
+        .lecture-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .lecture-table th, .lecture-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        .lecture-table th {
+            font-weight: 600;
+            background-color: var(--callout-bg);
+            color: var(--text-secondary);
+        }
+
+        .lecture-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .lecture-table tr:hover td {
+            background-color: var(--hover-bg);
+        }
+
+        .td-date {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .td-info {
+            white-space: nowrap;
+        }
+
+        .td-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .badge-type {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge-type.school { background-color: var(--tag-blue); color: #1e3a5f; }
+        .badge-type.org { background-color: var(--tag-green); color: #1b3d22; }
+        .badge-type.culture { background-color: var(--tag-yellow); color: #4d3d1e; }
+        .badge-type.company { background-color: var(--tag-pink); color: #4d2323; }
+        .badge-type.vod { background-color: var(--tag-orange); color: #4c2f1f; }
+        .badge-type.internal { background-color: var(--tag-gray); color: var(--text-secondary); }
+
+        /* Status tags next to name */
+        .name-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            margin-left: 6px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+        .name-tag.scheduled {
+            background-color: #fbf0f0;
+            color: #d14343;
+        }
+        .name-tag.re-run {
+            background-color: #fbece3;
+            color: #a05a2c;
+        }
+
+        @media (max-width: 600px) {
+            .lecture-table-container {
+                border: none;
+                background: transparent;
+            }
+            .lecture-table thead {
+                display: none;
+            }
+            .lecture-table tbody {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            .lecture-table tr {
+                display: flex;
+                flex-direction: column;
+                padding: 14px;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                background: var(--container-bg);
+                box-shadow: var(--shadow-sm);
+            }
+            .lecture-table td {
+                display: flex;
+                padding: 4px 0;
+                border: none;
+            }
+            .lecture-table td::before {
+                content: attr(data-label);
+                font-weight: 600;
+                color: var(--text-secondary);
+                width: 90px;
+                flex-shrink: 0;
+                font-size: 0.8rem;
+            }
+            .lecture-table td.td-name {
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: var(--text-primary);
+                padding-bottom: 8px;
+                border-bottom: 1px solid var(--border-color);
+                margin-bottom: 6px;
+            }
+            .lecture-table td.td-name::before {
+                display: none;
+            }
+            .lecture-table td.td-info {
+                white-space: normal;
+            }
+        }
+
+        /* Awards section */
+        .awards-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .awards-table th, .awards-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .awards-table th {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .awards-table tr:hover td {
+            background-color: var(--hover-bg);
+        }
+
+        .award-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-gold {
+            background-color: #fdf6e2;
+            color: #8a6d1c;
+        }
+        .badge-silver {
+            background-color: #f1f1ef;
+            color: #555555;
+        }
+        .badge-bronze {
+            background-color: #fbece3;
+            color: #a05a2c;
+        }
+
+        /* Book Section */
+        .book-card {
+            display: flex;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--container-bg);
+            margin-top: 12px;
+            width: 100%;
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            background-color: var(--hover-bg);
+        }
+
+        .book-img {
+            width: 120px;
+            object-fit: cover;
+        }
+
+        .book-info {
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .book-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .book-meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Fade Animation for Tabs */
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="theme-toggle-btn" id="theme-toggle">
+        <i class="fa-solid fa-moon"></i> <span>Dark Mode</span>
+    </button>
+
+    <div class="container">
+        <!-- New Profile Title and Subtitle -->
+        <div class="profile-header-main">
+            <h1 class="profile-name-new">키미 | 김희재</h1>
+            <div class="profile-subtitle-new">
+                마케팅 디자이너, AI 크리에이터, AI 강사
+            </div>
+        </div>
+        
+        <hr class="profile-divider">
+
+        <!-- New Profile Info Row -->
+        <div class="profile-row-new">
+            <!-- Col 1: Circular Avatar -->
+            <div class="profile-col-avatar">
+                <img src="resources/profile.png" alt="김희재 프로필 이미지">
+            </div>
+            
+            <!-- Col 2: Greetings & Bio -->
+            <div class="profile-col-bio">
+                <p class="greetings-text">안녕하세요. 마케팅 디자이너 <strong>김희재</strong>입니다.</p>
+                <p class="bio-desc-text">
+                    여러 브랜드의 디자인 기획부터 제작까지 전 과정을 맡아왔으며, 현재는 <strong>생성형 AI</strong>를 활용한 디자인 트렌드와 실무 적용법을 주제로 강의하고 있습니다.
+                </p>
+            </div>
+            
+            <!-- Col 3: Contact Info -->
+            <div class="profile-col-contact">
+                <div class="contact-item-new">
+                    <span class="contact-label-new">이메일 | Email</span>
+                    <span class="contact-val-new"><a href="mailto:ne.kimmy@gmail.com">ne.kimmy@gmail.com</a></span>
+                </div>
+                <div class="contact-item-new">
+                    <span class="contact-label-new">연락처 | Phone</span>
+                    <span class="contact-val-new"><a href="tel:010-7175-5932">010-7175-5932</a></span>
+                </div>
+            </div>
+            
+            <!-- Col 4: Social Links -->
+            <div class="profile-col-social">
+                <div class="social-link-item">
+                    <i class="fa-brands fa-instagram" style="color: #e1306c;"></i>
+                    <div>
+                        <a href="https://instagram.com/kimmy_notes" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <span class="social-handle">(@kimmy_notes)</span>
+                    </div>
+                </div>
+                <div class="social-link-item">
+                    <i class="fa-brands fa-threads" style="color: var(--text-primary);"></i>
+                    <div>
+                        <a href="https://threads.net/@kimmy_notes" target="_blank" rel="noopener noreferrer">Threads</a>
+                        <span class="social-title-desc">키미의 디자인 노트 (@kimmy_notes) · Threads, Say more</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Career -->
+        <h2 class="section-title">경력 (디자인 실무)</h2>
+        <div class="career-list">
+            <div class="career-item">
+                <div class="career-header">
+                    <span class="company-name">대학내일 <span class="status-badge active">재직중</span></span>
+                    <span class="career-period">2017.01 - 현재</span>
+                </div>
+                <div class="job-title">비주얼크리에이티브1팀 선임매니저</div>
+            </div>
+            
+            <div class="career-item">
+                <div class="career-header">
+                    <span class="company-name">루키커뮤니케이션</span>
+                    <span class="career-period">2015.03 - 2016.11</span>
+                </div>
+                <div class="job-title">디자인팀</div>
+            </div>
+        </div>
+
+        <!-- Section: Lectures -->
+        <h2 class="section-title">강의 이력</h2>
+        
+        <div class="lecture-controls">
+            <!-- Dynamic Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="offline">오프라인 강의</button>
+                <button class="tab-btn" data-tab="online">온라인 강의</button>
+                <button class="tab-btn" data-tab="internal">대학내일 사내 강의</button>
+            </div>
+            
+            <!-- Live Search Filter -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="lecture-search" class="search-input" placeholder="강의명 검색...">
+            </div>
+        </div>
+
+        <div id="lectures-container" class="fade-in lecture-timeline">
+            <!-- Timeline will be generated via JavaScript -->
+        </div>
+
+        <!-- Section: Awards -->
+        <h2 class="section-title">수상 (AI 공모전)</h2>
+        <table class="awards-table">
+            <thead>
+                <tr>
+                    <th style="width: 100px;">날짜</th>
+                    <th>공모전 이름</th>
+                    <th>수상 부문</th>
+                    <th>상격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025.08</td>
+                    <td><strong>고혼진 AI 영상광고 공모전</strong></td>
+                    <td>브랜드 스토리텔링 부문</td>
+                    <td><span class="award-badge badge-gold"><i class="fa-solid fa-medal"></i> 최우수상</span></td>
+                </tr>
+                <tr>
+                    <td>2025.12</td>
+                    <td><strong>카페인중독 AI 활용 영상 공모전</strong></td>
+                    <td>AI 활용 브랜드 영상</td>
+                    <td><span class="award-badge badge-silver"><i class="fa-solid fa-medal"></i> 특별상</span></td>
+                </tr>
+                <tr>
+                    <td>2025.12</td>
+                    <td><strong>2025 제 1회 퓨리얼 AI 영상 콘테스트</strong></td>
+                    <td>AI 활용 브랜드 영상</td>
+                    <td><span class="award-badge badge-bronze"><i class="fa-solid fa-medal"></i> 참가상</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section: Publications -->
+        <h2 class="section-title">출간</h2>
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?start=short&ItemId=390636352" target="_blank" rel="noopener noreferrer" class="book-card">
+            <img src="resources/preview-book.jpg" alt="된다! AI 디자인 2026 책 표지" class="book-img">
+            <div class="book-info">
+                <h3 class="book-title">된다! AI 디자인 2026</h3>
+                <div class="book-meta"><strong>출판사:</strong> 이지스퍼블리싱</div>
+                <div class="book-meta"><strong>역할:</strong> 단독 저자</div>
+                <div class="book-meta"><strong>출간일:</strong> 2026년 4월 (출간 완료)</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- JavaScript Data and Core Logic -->
+    <script>
+        // Data structure containing the lectures data
+        const lecturesData = {
+            offline: [
+                { year: 2026, date: "10월", name: "바로 써먹는 생성형 AI 영상 완벽 가이드", client: "강동숲속도서관", type: "기관", info: "2시간 x 4회", status: "예정" },
+                { year: 2026, date: "09월", name: "Notefolio AI + 포토샵 스프린트 10기", client: "스터닝", type: "기관", info: "4시간 x 2회", status: "예정" },
+                { year: 2026, date: "09월", name: "구직자를 위한 AI숏폼 영상 제작 특강", client: "경기도일자리재단", type: "기관", info: "4시간 x 3회", isReRun: true, status: "예정" },
+                { year: 2026, date: "08월", name: "키미의 하루 만에 끝내는 AI 마스터: AI로 나만의 AI 음악 만들기", client: "현대백화점 무역센터점", type: "문화센터", info: "2시간", status: "예정" },
+                { year: 2026, date: "08월", name: "키미의 하루 만에 끝내는 AI 마스터: AI로 이미지와 영상만들기", client: "현대백화점 무역센터점", type: "문화센터", info: "2시간", status: "예정" },
+                { year: 2026, date: "08월", name: "AI 업무활용 특강", client: "법원공무원교육원", type: "기관", info: "4시간", status: "예정" },
+                { year: 2026, date: "08월", name: "나만의 이미지로 완성하는 AI 영상 제작", client: "김포문화재단", type: "기관", info: "2시간 x 4회", status: "예정" },
+                { year: 2026, date: "07월", name: "수기치인 시민의식 생성형 AI 콘텐츠 제작 워크숍", client: "성균관대학교", type: "학교", info: "4시간", status: "예정" },
+                { year: 2026, date: "07월", name: "키미의 하루 만에 끝내는 AI 마스터: AI로 업무 생산성 업그레이드하기", client: "현대백화점 무역센터점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "07월", name: "키미의 하루만에 끝내는 AI 이미지·영상 만들기", client: "현대백화점 천호점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "07월", name: "키미의 하루만에 끝내는 AI 이미지·영상 만들기", client: "현대백화점 신촌점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "07월", name: "구직자를 위한 AI숏폼 영상 제작 특강", client: "경기도일자리재단", type: "기관", info: "4시간 x 3회" },
+                { year: 2026, date: "06월", name: "키미의 하루만에 끝내는 AI 이미지·영상 만들기", client: "김포문화재단", type: "기관", info: "3시간" },
+
+                { year: 2026, date: "06월", name: "바로 써먹는 생성형 AI 영상 완벽 가이드", client: "강동숲속도서관", type: "기관", info: "2시간 x 4회" },
+                { year: 2026, date: "06월", name: "키미의 하루만에 끝내는 AI 이미지·영상 만들기", client: "현대백화점 신촌점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "06월", name: "AI로 완성하는 캐릭터 애니메이션", client: "양천도서관", type: "기관", info: "2시간" },
+                { year: 2026, date: "06월", name: "AI로 완성하는 우리 아이 콘텐츠", client: "양천도서관", type: "기관", info: "2시간" },
+                { year: 2026, date: "05월", name: "AI로 완성하는 나만의 음원과 보이스", client: "양천도서관", type: "기관", info: "2시간" },
+                { year: 2026, date: "05월", name: "AI로 완성하는 생산성 업그레이드", client: "양천도서관", type: "기관", info: "2시간" },
+                { year: 2026, date: "05월", name: "Notefolio AI + 포토샵 스프린트 9기", client: "스터닝", type: "기관", info: "4시간 x 2회" },
+                { year: 2026, date: "05월", name: "미래자동차 혁신융합대학사업단 서포터즈 AI 워크숍", client: "아주대학교", type: "학교", info: "4시간" },
+                { year: 2026, date: "04월", name: "AI로 완성하는 숏폼 스토리 영상", client: "양천도서관", type: "기관", info: "2시간" },
+                { year: 2026, date: "04월", name: "LBCC 모임_하루 만에 시작하는 무료 AI 이미지·영상 만들기", client: "LBCC", type: "기관", info: "3시간" },
+                { year: 2026, date: "04월", name: "AI로 완성하는 비주얼 콘텐츠 디자인", client: "양천도서관", type: "기관", info: "2시간" },
+                { year: 2026, date: "04월", name: "이미지부터 음악까지, 무료 AI 영상 제작 실습(심화)", client: "롯데백화점 동탄점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "04월", name: "처음 해보는 무료 AI 이미지·영상 만들기(입문)", client: "롯데백화점 동탄점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "03월", name: "키미의 하루만에 끝내는 AI 이미지·영상 만들기", client: "현대백화점 신촌점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "03월", name: "바로 써먹는 생성형 AI 이미지 완벽 가이드", client: "강동숲속도서관", type: "기관", info: "2시간 x 4회" },
+                { year: 2026, date: "02월", name: "아이의 그림이 살아나는 AI", client: "롯데백화점 동탄점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "02월", name: "수기치인 시민의식 생성형 AI 콘텐츠 제작 워크숍", client: "성균관대학교", type: "학교", info: "4시간" },
+                { year: 2026, date: "02월", name: "Notefolio AI + 포토샵 스프린트 8기", client: "스터닝", type: "기관", info: "4시간 x 2회" },
+                { year: 2026, date: "01월", name: "처음 만나는 나의 첫 AI – 무료 이미지 · 영상 실습편", client: "제주대학교", type: "학교", info: "6시간" },
+                { year: 2026, date: "01월", name: "미드저니로 확장하는 나의 스타일, AI 이미지 · 영상(심화)", client: "롯데백화점 동탄점", type: "문화센터", info: "2시간" },
+                { year: 2026, date: "01월", name: "AI시대 수익의 필수 스킬, AI 이미지&영상(초급)", client: "롯데백화점 동탄점", type: "문화센터", info: "2시간" },
+                { year: 2025, date: "12월", name: "키미의 하루만에 끝내는 5가지 AI 이미지툴 사용법", client: "현대백화점 킨텍스점", type: "문화센터", info: "2시간" },
+                { year: 2025, date: "11월", name: "키미의 하루만에 끝내는 5가지 AI 이미지툴 사용법", client: "현대백화점 무역센터점", type: "문화센터", info: "2시간" },
+                { year: 2025, date: "11월", name: "Notefolio AI + 포토샵 스프린트 7기", client: "(주)스터닝", type: "기관", info: "4시간 x 2회" },
+                { year: 2025, date: "09월", name: "LBCC 셀렉트 모임_AI로 원하는 이미지 찰떡 같이 출력하기", client: "LBCC", type: "기관", info: "3시간 x 3회" },
+                { year: 2025, date: "09월", name: "마케터를 위한 AI 비주얼 메이킹 실무 클래스", client: "탈잉", type: "기업 | 임직원", info: "3시간" },
+                { year: 2025, date: "09월", name: "Notefolio AI + 포토샵 스프린트 6기", client: "(주)스터닝", type: "기관", info: "4시간 x 2회" },
+                { year: 2025, date: "08월", name: "이미지 생성형 AI 워크숍(기초) (재진행)", client: "NE능률", type: "기업 | 임직원", info: "3시간" },
+                { year: 2025, date: "07월", name: "이미지 생성형 AI 워크숍(기초)", client: "NE능률", type: "기업 | 임직원", info: "3시간" },
+                { year: 2025, date: "07월", name: "이미지 생성형 AI 워크숍(기초+심화)", client: "NE능률", type: "기업 | 임직원", info: "3시간" },
+                { year: 2025, date: "06월", name: "부산 디자인 페스티벌 원데이 워크숍", client: "스터닝", type: "기관", info: "4시간 x 2회" },
+                { year: 2025, date: "06월", name: "이미지 생성형 AI 활용 학술자료 준비 워크숍 (재진행)", client: "AGQC", type: "기관", info: "3시간" },
+                { year: 2025, date: "06월", name: "Notefolio AI + 포토샵 스프린트 5기", client: "스터닝", type: "기관", info: "5시간" },
+                { year: 2025, date: "04월", name: "Notefolio AI + 포토샵 스프린트 4기", client: "스터닝", type: "기관", info: "5시간" },
+                { year: 2025, date: "03월", name: "이미지 생성형 AI 활용 학술자료 준비 워크숍", client: "AGQC", type: "기관", info: "3시간" },
+                { year: 2025, date: "02월", name: "연구계획서 작성을 위한 이미지 생성형 AI 워크숍", client: "고려대학교 대학원 식물생명공학과", type: "학교", info: "2시간" },
+                { year: 2024, date: "11월", name: "Notefolio AI + 포토샵 스프린트 3기", client: "스터닝", type: "기관", info: "5시간" },
+                { year: 2024, date: "08월", name: "Notefolio AI + 포토샵 스프린트 2기", client: "스터닝", type: "기관", info: "5시간" },
+                { year: 2024, date: "07월", name: "Notefolio AI + 포토샵 스프린트 1기", client: "스터닝", type: "기관", info: "5시간" }
+            ],
+            online: [
+                { year: 2025, date: "연중", name: "AI시대 일잘러 필수 스킬 <생성형 AI 완벽 가이드>", client: "탈잉", type: "VOD", url: "https://www.taling.me/talent/61260" }
+            ],
+            internal: [
+                { year: 2026, date: "연간", name: "생성형 AI 이미지 기초 강의", client: "대학내일", type: "사내", info: "임직원 대상" },
+                { year: 2025, date: "연간", name: "영상 PD 직군 대상 미드저니 강의", client: "대학내일", type: "사내", info: "임직원 대상" },
+                { year: 2024, date: "연간", name: "생성형 AI 기초 강의", client: "대학내일", type: "사내", info: "임직원 대상" },
+                { year: 2024, date: "연간", name: "디자인 커뮤니케이션 강의", client: "대학내일", type: "사내", info: "임직원 대상" },
+                { year: 2023, date: "연간", name: "포토샵 기초 강의", client: "대학내일", type: "사내", info: "임직원 대상" },
+                { year: 2022, date: "연간", name: "디자인 기본 요소 및 구성 이론 강의", client: "대학내일", type: "사내", info: "임직원 대상" }
+            ]
+        };
+
+        let currentTab = 'offline';
+        let limitsByYear = {};
+        const lecturesContainer = document.getElementById('lectures-container');
+        const searchInput = document.getElementById('lecture-search');
+
+
+
+        // Render lectures based on current tab and search query
+        function renderLectures() {
+            const query = searchInput.value.toLowerCase().trim();
+            const rawItems = lecturesData[currentTab];
+            
+            // Filter elements based on query
+            const filteredItems = rawItems.filter(item => 
+                item.name.toLowerCase().includes(query) || 
+                (item.client && item.client.toLowerCase().includes(query)) ||
+                (item.type && item.type.toLowerCase().includes(query)) ||
+                (item.info && item.info.toLowerCase().includes(query)) ||
+                item.year.toString().includes(query) ||
+                item.date.toLowerCase().includes(query)
+            );
+
+            if (filteredItems.length === 0) {
+                lecturesContainer.innerHTML = `<div class="no-results">검색 결과가 없습니다.</div>`;
+                return;
+            }
+
+            // Group by year first
+            const grouped = {};
+            filteredItems.forEach(item => {
+                if (!grouped[item.year]) {
+                    grouped[item.year] = [];
+                }
+                grouped[item.year].push(item);
+            });
+
+            // Sort years descending
+            const sortedYears = Object.keys(grouped).sort((a, b) => b - a);
+
+            let html = '';
+            sortedYears.forEach(year => {
+                const yearItems = grouped[year];
+                const defaultLimit = window.innerWidth <= 768 ? 5 : 8;
+                const yearLimit = limitsByYear[year] || defaultLimit;
+                const itemsToRender = yearItems.slice(0, yearLimit);
+
+                html += `
+                    <div class="year-group">
+                        <div class="year-title">${year}년</div>
+                        <div class="lecture-table-container">
+                            <table class="lecture-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 80px;">날짜</th>
+                                        <th>강의명</th>
+                                        <th style="width: 140px;">클라이언트</th>
+                                        <th style="width: 90px;">유형</th>
+                                        <th style="width: 160px;">운영 정보</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                `;
+
+                itemsToRender.forEach(lecture => {
+                    const typeClass = 
+                        lecture.type === '학교' ? 'school' : 
+                        lecture.type === '기관' ? 'org' : 
+                        lecture.type === '문화센터' ? 'culture' : 
+                        lecture.type === '사내' ? 'internal' : 
+                        lecture.type === 'VOD' ? 'vod' : 'company';
+
+                    const typeBadge = lecture.type ? `<span class="badge-type ${typeClass}">${lecture.type}</span>` : '-';
+                    const client = lecture.client || '-';
+                    let info = lecture.info || '-';
+
+                    // Format "A시간 x B회" to "C시간 (Ah×B)" dynamically
+                    if (info.includes('시간') && info.includes('x')) {
+                        const match = info.match(/(\d+)시간\s*x\s*(\d+)회?/);
+                        if (match) {
+                            const hours = parseInt(match[1]);
+                            const times = parseInt(match[2]);
+                            info = `${hours * times}시간 (${hours}h×${times})`;
+                        }
+                    }
+
+                    // For online VOD with link
+                    if (lecture.url) {
+                        info = `<a href="${lecture.url}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); font-weight:600;"><i class="fa-solid fa-arrow-up-right-from-square"></i> 바로가기</a>`;
+                    }
+
+                    let nameHtml = lecture.name;
+                    if (lecture.status === '예정') {
+                        nameHtml += ` <span class="name-tag scheduled">예정</span>`;
+                    }
+
+                    html += `
+                        <tr>
+                            <td class="td-date" data-label="날짜">${lecture.date}</td>
+                            <td class="td-name" data-label="강의명">${nameHtml}</td>
+                            <td data-label="클라이언트">${client}</td>
+                            <td data-label="유형">${typeBadge}</td>
+                            <td class="td-info" data-label="운영 정보">${info}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                                </tbody>
+                            </table>
+                        </div>
+                `;
+
+                // Add Load More text link if this year has remaining items
+                if (yearItems.length > yearLimit) {
+                    const remaining = yearItems.length - yearLimit;
+                    html += `
+                        <div class="load-more-container">
+                            <span class="load-more-text" data-year="${year}">+${remaining}개 더보기</span>
+                        </div>
+                    `;
+                }
+
+                html += `
+                    </div>
+                `;
+            });
+
+            lecturesContainer.innerHTML = html;
+
+            // Load More Text Click Listener for each year group
+            document.querySelectorAll('.load-more-text').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const y = e.target.dataset.year;
+                    const defaultLimit = window.innerWidth <= 768 ? 5 : 8;
+                    limitsByYear[y] = (limitsByYear[y] || defaultLimit) + 15;
+                    renderLectures();
+                });
+            });
+        }
+
+        // Handle Tab Switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                // Add quick animation
+                lecturesContainer.classList.remove('fade-in');
+                void lecturesContainer.offsetWidth; // Trigger reflow
+                lecturesContainer.classList.add('fade-in');
+
+                currentTab = e.target.dataset.tab;
+                limitsByYear = {}; // Reset limits by year
+                renderLectures();
+            });
+        });
+
+        // Search Input handler
+        searchInput.addEventListener('input', () => {
+            limitsByYear = {}; // Reset limits by year
+            renderLectures();
+        });
+
+
+        // Dark/Light Theme Switcher
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+
+        // Load saved preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        updateToggleButton(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateToggleButton(newTheme);
+        });
+
+        function updateToggleButton(theme) {
+            if (theme === 'dark') {
+                themeToggle.innerHTML = `<i class="fa-solid fa-sun"></i> <span>Light Mode</span>`;
+            } else {
+                themeToggle.innerHTML = `<i class="fa-solid fa-moon"></i> <span>Dark Mode</span>`;
+            }
+        }
+
+        // Initial Render
+        renderLectures();
+    </script>
+</body>
+</html>
